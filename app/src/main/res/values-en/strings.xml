@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">Git Memento</string>
+
+    <string name="header_name">Git Memento</string>
+    <string name="header_version">Version 1.0.0</string>
+
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
+
+    <!-- Menu -->
+    <string name="action_setup_help">Help and Config</string>
+    <string name="action_create">Créating</string>
+    <string name="action_show">Display</string>
+    <string name="action_revert">Revert</string>
+    <string name="action_branch">Branch</string>
+    <string name="action_update">Update</string>
+    <string name="action_tag">Tags</string>
+    <string name="action_publish">Publishing</string>
+    <string name="action_useful">Useful commands</string>
+
+    <string name="action_about">About</string>
+    <string name="about_txt">Git Memento is a free application grouping the main orders of Git.
+                             \n\nThe application was developed with the help of the official documentation.
+                             \n\nFor any contact please leave a comment on the Play Store.</string>
+
+    <!-- Liste -->
+
+    <!-- Aide et installation -->
+    <string-array name="list_header_setup">
+        <item>Configure username information</item>
+        <item>Configure email information</item>
+        <item>Configure colorization</item>
+        <item>Add a remote repository</item>
+    </string-array>
+    <string-array name="list_command_setup">
+        <item>git config --global user.name [username]</item>
+        <item>git config --global user.mail [email]</item>
+        <item>git config --global color.ui auto</item>
+        <item>git remote add [username] [url]</item>
+    </string-array>
+
+    <!-- Création -->
+    <string-array name="list_header_create">
+        <item>Create a local repository</item>
+        <item>Clone a local repository</item>
+        <item>Clone a remote repository</item>
+    </string-array>
+    <string-array name="list_command_create">
+        <item>git init</item>
+        <item>git clone [path]</item>
+        <item>git clone [username@path]</item>
+    </string-array>
+
+    <!-- Affichage -->
+    <string-array name="list_header_show">
+        <item>Recently Modified Files</item>
+        <item>Shows file differences </item>
+        <item>Shows file differences between 2 files</item>
+        <item>History of changes</item>
+        <item>Show the last commit</item>
+        <item>Content commit</item>
+        <item>Branches list</item>
+        <item>Show remote servers + url</item>
+    </string-array>
+    <string-array name="list_command_show">
+        <item>git status</item>
+        <item>git diff</item>
+        <item>git diff [file1] [file2]</item>
+        <item>git log</item>
+        <item>git last</item>
+        <item>git show [id commit]</item>
+        <item>git branch</item>
+        <item>git remote -v</item>
+    </string-array>
+
+    <!-- Revenir -->
+    <string-array name="list_header_revert">
+        <item>Change the last commit</item>
+        <item>Cancel the last commit</item>
+        <item>Cancel all the changes of the last commit</item>
+        <item>Return to a commit</item>
+    </string-array>
+    <string-array name="list_command_revert">
+        <item>git commit --amend</item>
+        <item>git reset HEAD</item>
+        <item>git reset --hard HEAD</item>
+        <item>git revert [id commit]</item>
+    </string-array>
+
+    <!-- Branche -->
+    <string-array name="list_header_branch">
+        <item>Branches list</item>
+        <item>Create a branch</item>
+        <item>Switch branch</item>
+        <item>Merge 2 branches</item>
+        <item>Delete a branch</item>
+    </string-array>
+    <string-array name="list_command_branch">
+        <item>git branch</item>
+        <item>git branch [branch name]</item>
+        <item>git checkout [branch name]</item>
+        <item>git checkout [branch 2] \ngit merge [branch 1]</item>
+        <item>git branch -d [branche name]</item>
+    </string-array>
+
+    <!-- Tag -->
+    <string-array name="list_header_tag">
+        <item>Tags list</item>
+        <item>Tag version</item>
+        <item>Tag a version on a commit</item>
+        <item>Publish tags</item>
+    </string-array>
+    <string-array name="list_command_tag">
+        <item>git tag</item>
+        <item>git tag [tag]</item>
+        <item>git tag [tag] [id commit]</item>
+        <item>git push --tags</item>
+    </string-array>
+
+    <!-- Mise à jour -->
+    <string-array name="list_header_update">
+        <item>Download new fils</item>
+    </string-array>
+    <string-array name="list_command_update">
+        <item>git pull</item>
+    </string-array>
+
+    <!-- Publication -->
+    <string-array name="list_header_publish">
+        <item>Add all the files to publish</item>
+        <item>Add some all files to publish</item>
+        <item>Commit all files in the list</item>
+        <item>Commit some files</item>
+        <item>Commit with a message</item>
+        <item>Publish the code</item>
+        <item>Publish the code on a remote repository</item>
+    </string-array>
+    <string-array name="list_command_publish">
+        <item>git add --all</item>
+        <item>git add [file or path]</item>
+        <item>git commit -a</item>
+        <item>git commit [file1] [file2] ...</item>
+        <item>git commit -m "[message]"</item>
+        <item>git push</item>
+        <item>git push [repository] [branch]</item>
+    </string-array>
+
+    <!-- Commandes utiles -->
+    <string-array name="list_header_useful">
+        <item>Search in a file</item>
+        <item>Git aliasest</item>
+    </string-array>
+    <string-array name="list_command_useful">
+        <item>git grep "[search]"</item>
+        <item>git config --global alias.co checkout
+              \ngit config --global alias.br branch
+              \ngit config --global alias.ci commit
+              \ngit config --global alias.st status</item>
+    </string-array>
+
+</resources>

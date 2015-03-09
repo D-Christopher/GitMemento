@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">Git Memento</string>
+
+    <string name="header_name">Git Memento</string>
+    <string name="header_version">Version 1.0.0</string>
+
+    <string name="openDrawer">Ouverture</string>
+    <string name="closeDrawer">Fermeture</string>
+
+    <!-- Menu -->
+    <string name="action_setup_help">Aide et installation</string>
+    <string name="action_create">Création</string>
+    <string name="action_show">Affichage</string>
+    <string name="action_revert">Revenir</string>
+    <string name="action_branch">Branche</string>
+    <string name="action_update">Mise à jour</string>
+    <string name="action_tag">Tags</string>
+    <string name="action_publish">Publication</string>
+    <string name="action_useful">Commandes utiles</string>
+
+    <string name="action_about">À propos</string>
+    <string name="about_txt">Git Memento est une application gratuite regroupant les principales commandes de Git.
+                             \n\nL\'application a été développée avec l\'aide de la documentation officielle.
+                             \n\nPour toute demande de contact veuillez laisser un commentaire sur le Play Store.</string>
+
+    <!-- Liste -->
+
+    <!-- Aide et installation -->
+    <string-array name="list_header_setup">
+        <item>Configuration du nom utilisateur</item>
+        <item>Configuration du mail utilisateur</item>
+        <item>Configuration de la colorisation</item>
+        <item>Ajouter un dépôt distant</item>
+    </string-array>
+    <string-array name="list_command_setup">
+        <item>git config --global user.name [nom]</item>
+        <item>git config --global user.mail [mail]</item>
+        <item>git config --global color.ui auto</item>
+        <item>git remote add [nom] [url]</item>
+    </string-array>
+
+    <!-- Création -->
+    <string-array name="list_header_create">
+        <item>Créer un dépot local</item>
+        <item>Cloner un dépôt local</item>
+        <item>Cloner un dépôt distant</item>
+    </string-array>
+    <string-array name="list_command_create">
+        <item>git init</item>
+        <item>git clone [chemin]</item>
+        <item>git clone [nomUtilisateur@chemin]</item>
+    </string-array>
+
+    <!-- Affichage -->
+    <string-array name="list_header_show">
+        <item>Fichiers modifiés récemment</item>
+        <item>Changement effectué</item>
+        <item>Changement effectué entre 2 fichiers</item>
+        <item>Historique des changements</item>
+        <item>Afficher le dernier commit</item>
+        <item>Contenu d\'un commit</item>
+        <item>Affichage des branches</item>
+        <item>Affichage des serveurs distants + url</item>
+    </string-array>
+    <string-array name="list_command_show">
+        <item>git status</item>
+        <item>git diff</item>
+        <item>git diff [fichier1] [fichier2]</item>
+        <item>git log</item>
+        <item>git last</item>
+        <item>git show [id commit]</item>
+        <item>git branch</item>
+        <item>git remote -v</item>
+    </string-array>
+
+    <!-- Revenir -->
+    <string-array name="list_header_revert">
+        <item>Modifier le dernier commit</item>
+        <item>Annuler le dernier commit</item>
+        <item>Annuler tous les changements du dernier commit</item>
+        <item>Revenir sur un commit</item>
+    </string-array>
+    <string-array name="list_command_revert">
+        <item>git commit --amend</item>
+        <item>git reset HEAD</item>
+        <item>git reset --hard HEAD</item>
+        <item>git revert [id commit]</item>
+    </string-array>
+
+    <!-- Branche -->
+    <string-array name="list_header_branch">
+        <item>Affichage des branches</item>
+        <item>Creer une branche</item>
+        <item>Changer de branche</item>
+        <item>Fusionner 2 branches</item>
+        <item>Supprimer une branche</item>
+    </string-array>
+    <string-array name="list_command_branch">
+        <item>git branch</item>
+        <item>git branch [nom branche]</item>
+        <item>git checkout [nom branche]</item>
+        <item>git checkout [branche 2] \ngit merge [branche 1]</item>
+        <item>git branch -d [nom branche]</item>
+    </string-array>
+
+    <!-- Tag -->
+    <string-array name="list_header_tag">
+        <item>Lister les tags</item>
+        <item>Tagger une version</item>
+        <item>Tagger une version sur un commit</item>
+        <item>Publier les tags</item>
+    </string-array>
+    <string-array name="list_command_tag">
+        <item>git tag</item>
+        <item>git tag [tag]</item>
+        <item>git tag [tag] [id commit]</item>
+        <item>git push --tags</item>
+    </string-array>
+
+    <!-- Mise à jour -->
+    <string-array name="list_header_update">
+        <item>Télécharger les nouveautés</item>
+    </string-array>
+    <string-array name="list_command_update">
+        <item>git pull</item>
+    </string-array>
+
+    <!-- Publication -->
+    <string-array name="list_header_publish">
+        <item>Ajouter tous les fichiers pour la publication</item>
+        <item>Ajouter certains fichiers pour la publication</item>
+        <item>Commit tous les fichiers de la liste</item>
+        <item>Commit certains fichiers</item>
+        <item>Commit avec un message</item>
+        <item>Publier du code</item>
+        <item>Publier du code sur un dépôt distant</item>
+    </string-array>
+    <string-array name="list_command_publish">
+        <item>git add --all</item>
+        <item>git add [fichier ou chemin]</item>
+        <item>git commit -a</item>
+        <item>git commit [nom fichier 1] [nom fichier 2] ...</item>
+        <item>git commit -m "[message]"</item>
+        <item>git push</item>
+        <item>git push [nom dépôt] [branche]</item>
+    </string-array>
+
+    <!-- Commandes utiles -->
+    <string-array name="list_header_useful">
+        <item>Rechercher dans un fichier</item>
+        <item>Les alias de git</item>
+    </string-array>
+    <string-array name="list_command_useful">
+        <item>git grep "[recherche]"</item>
+        <item>git config --global alias.co checkout
+              \ngit config --global alias.br branch
+              \ngit config --global alias.ci commit
+              \ngit config --global alias.st status</item>
+    </string-array>
+
+</resources>
