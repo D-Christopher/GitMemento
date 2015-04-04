@@ -2,7 +2,7 @@
     <string name="app_name">Git Memento</string>
 
     <string name="header_name">Git Memento</string>
-    <string name="header_version">Version 1.0.0</string>
+    <string name="header_version">Version 1.0.1</string>
 
     <string name="openDrawer">Ouverture</string>
     <string name="closeDrawer">Fermeture</string>
